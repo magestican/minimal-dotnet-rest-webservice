@@ -25,7 +25,7 @@ namespace givery
                     port = Console.ReadLine();
                 }
                 //Base Address for StudentService
-                Uri httpBaseAddress = new Uri("http://localhost:" + port + "/api");
+                Uri httpBaseAddress = new Uri("http://localhost:" + port + "/api/");
 
                 //Instantiate ServiceHost
                 svcHost = new ServiceHost(typeof(givery.api),
