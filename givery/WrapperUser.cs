@@ -10,7 +10,7 @@ namespace givery
     }
 
     [DataContract]
-    class WrapperUser
+    public class WrapperUser
     {
 
         decimal Id;

@@ -5,12 +5,13 @@ using System.Runtime.Serialization;
 namespace givery
 {
     [DataContract]
-    class WrapperEvent
+    public class WrapperEvent
     {
         decimal Id;
         int UserId;
         string Name;
         DateTime StartDate;
+        int Atendees;
 
         [DataMember]
         public decimal id
@@ -36,6 +37,13 @@ namespace givery
         {
             get { return StartDate; }
             set { StartDate = value; }
+        }
+
+        [DataMember]
+        public int atendees
+        {
+            get { return Atendees; }
+            set { Atendees = value; }
         }
 
     }

@@ -2,7 +2,7 @@
 namespace givery
 {
     [DataContract]
-    class WrapperCompany : WrapperUser
+    public class WrapperCompany : WrapperUser
     {
 
     }
