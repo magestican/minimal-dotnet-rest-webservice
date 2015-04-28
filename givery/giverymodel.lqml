@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database Name="test" EntityNamespace="TestContext" ContextNamespace="TestContext" Class="TestDataContext" xmlns:ed="http://devart.com/schemas/EntityDeveloper/1.0" ed:Guid="0807d41d-390d-4ca8-9632-f7284f18ad6b" Provider="Devart.Data.MySql.Linq.Provider.MySqlDataProvider, Devart.Data.MySql.Linq" Extended="true" xmlns="http://schemas.devart.com/linqconnect/mapping">
+  <Connection Mode="ConnectionString" ConnectionString="User Id=root;Host=localhost;Database=test;Persist Security Info=True" Provider="Devart.Data.MySql" />
+  <Table Name="test.attends" Member="Attends">
+    <Type Name="Attend" ed:Guid="980342fa-b55b-4b83-8c61-dfdbf8a04f61">
+      <Column Name="user_id" Member="UserId" Type="System.Int32" DbType="INT(11) NOT NULL" IsPrimaryKey="true" CanBeNull="false" UpdateCheck="Always" Precision="11" ed:ValidateRequired="true" ed:Guid="6f5310eb-dfa2-4d8e-bb62-8b303bb07350" />
+      <Column Name="event_id" Member="EventId" Type="System.Int32" DbType="INT(11) NOT NULL" IsPrimaryKey="true" CanBeNull="false" UpdateCheck="Always" Precision="11" ed:ValidateRequired="true" ed:Guid="226d86dc-1f2e-4a82-82f6-6584a75554a8" />
+      <Column Name="reserved_at" Member="ReservedAt" Type="System.DateTime" DbType="TIMESTAMP NOT NULL" CanBeNull="false" UpdateCheck="Never" DefaultValue="CURRENT_TIMESTAMP" ed:ValidateRequired="true" ed:Guid="3ee5f1b5-9171-43b9-9760-bc7dd455f833" />
+    </Type>
+  </Table>
+  <Table Name="test.events" Member="Events">
+    <Type Name="Event" ed:Guid="4207464d-dcd7-4f84-8a59-372d7c9832aa">
+      <Column Name="id" Member="Id" Type="System.Decimal" AutoSync="OnInsert" DbType="BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="Always" Precision="20" Scale="0" ed:ValidateRequired="true" ed:Guid="f5211fa2-ad8a-404a-897d-083df7891718" />
+      <Column Name="user_id" Member="UserId" Type="System.Int32" DbType="INT(11) NOT NULL" CanBeNull="false" UpdateCheck="Never" Precision="11" ed:ValidateRequired="true" ed:Guid="58c3f8ca-92ba-45b2-8f3b-e6b64726502e" />
+      <Column Name="name" Member="Name" Type="System.String" DbType="VARCHAR(100) NOT NULL" CanBeNull="false" UpdateCheck="Never" MaxLength="100" ed:ValidateMaxLength="100" ed:ValidateRequired="true" ed:Guid="9f79aa91-771f-4d13-a026-e763b58212ea" />
+      <Column Name="start_date" Member="StartDate" Type="System.DateTime" DbType="DATETIME NOT NULL" CanBeNull="false" UpdateCheck="Never" ed:ValidateRequired="true" ed:Guid="b29e4574-3d5e-4d12-8273-3fd4f4f23768" />
+    </Type>
+  </Table>
+  <Table Name="test.users" Member="Users">
+    <Type Name="User" ed:Guid="5862bb9d-2bd5-4aab-8eba-d0dd94c4dc1b">
+      <Column Name="id" Member="Id" Type="System.Decimal" AutoSync="OnInsert" DbType="BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="Always" Precision="20" Scale="0" ed:ValidateRequired="true" ed:Guid="d40f147c-f471-49b1-9037-16183d1c5e67" />
+      <Column Name="name" Member="Name" Type="System.String" DbType="VARCHAR(100) NOT NULL" CanBeNull="false" UpdateCheck="Never" MaxLength="100" ed:ValidateMaxLength="100" ed:ValidateRequired="true" ed:Guid="65315db6-b4ce-4b96-a812-5a380dc095c7" />
+      <Column Name="`password`" Member="Password" Type="System.String" DbType="VARCHAR(100) NOT NULL" CanBeNull="false" UpdateCheck="Never" MaxLength="100" ed:ValidateMaxLength="100" ed:ValidateRequired="true" ed:Guid="1f36baf9-e52e-43c1-9b56-67a3ff29e558" />
+      <Column Name="email" Member="Email" Type="System.String" DbType="VARCHAR(100) NOT NULL" CanBeNull="false" UpdateCheck="Never" MaxLength="100" ed:ValidateMaxLength="100" ed:ValidateRequired="true" ed:Guid="00f952da-19db-4321-893c-94990e2dbff9" />
+      <Column Name="group_id" Member="GroupId" Type="System.Int32" DbType="INT(11) NOT NULL" CanBeNull="false" UpdateCheck="Never" Precision="11" ed:ValidateRequired="true" ed:Guid="264330ab-22f2-455e-9ba2-19950ad2cc0a" />
+    </Type>
+  </Table>
+</Database>
