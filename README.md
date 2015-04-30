@@ -1,14 +1,3 @@
-# Sample Test for new Code-Check
-
-Code-Check is a web service which we are going to develop in 2015.
-It provides users the system to make various coding tests and the interface to solve tests.
-This is a prototype for it.
-
-## Purpose
-
-- Measuring developing skills of candidates.
-- Helping candidates to understand how to develop in Givery.(Using [api-first-spec](https://github.com/shunjikonishi/api-first-spec))
-- Considering what the new code-check test should be.
 
 ## Test
 
